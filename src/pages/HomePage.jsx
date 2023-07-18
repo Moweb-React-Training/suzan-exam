@@ -95,17 +95,6 @@ const HomePage = () => {
     });
   };
 
-  const [selectedDate, setSelectedDate] = useState(new Date());
-    
-   
-  // Disable past dates
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-    console.log("Date:"+ selectedDate);
-  };
   const handleKeyDown = (e, index) => {
     if (e.key === "#") {
       e.preventDefault();
