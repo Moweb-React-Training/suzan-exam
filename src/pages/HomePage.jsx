@@ -262,9 +262,7 @@ const HomePage = () => {
           ))}
           {error && <h6 className="text-danger">{error}</h6>}
 
-          <button onClick={handleAddRow} className="btn btn-info">
-            ➕
-          </button>
+          
           <center>
             <button className="btn btn-secondary">Cancel</button>{" "}
             <button className="btn btn-primary" type="submit">
@@ -272,6 +270,9 @@ const HomePage = () => {
             </button>
           </center>
         </form>
+        <button onClick={handleAddRow} className="btn btn-info">
+            ➕
+          </button>
       </div>
     </>
   );
